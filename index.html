@@ -1302,7 +1302,119 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1717272712242350&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+<!-- ========== API DE CONVERSÕES (SERVER-SIDE) ========== -->
+<script>
+// Função para enviar eventos server-side
+<script>
+// ========== RASTREAMENTO DE CTAs ==========
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('🚀 Iniciando rastreamento de CTAs...');
+    
+    // Seleciona TODOS os botões CTA
+    const ctaButtons = document.querySelectorAll('.cta-primary');
+    console.log('📊 Botões encontrados:', ctaButtons.length);
+    
+    ctaButtons.forEach((button, index) => {
+        
+        // Adiciona evento de clique
+        button.addEventListener('click', function(e) {
+            e.preventDefault(); // Previne ação padrão
+            e.stopPropagation(); // Para propagação
+            
+            
+            // Pega a URL do checkout
+            console.log('🔗 URL de destino:', checkoutUrl);
+            
+            // Adiciona loading visual
+            this.classList.add('loading');
+            this.style.pointerEvents = 'none'; // Previne cliques duplos
+            
+            // 1. ENVIA PIXEL (se disponível)
+            if (typeof fbq !== 'undefined') {
+                try {
+                    fbq('track', 'InitiateCheckout', {
+                        value: 29.90,
+                        currency: 'BRL',
+                        content_name: 'Liberte-se do Pânico',
+                        content_ids: ['liberte-se-panico'],
+                        content_type: 'product'
+                    });
+                    console.log('✅ Pixel enviado com sucesso');
+                } catch (error) {
+                    console.error('❌ Erro no Pixel:', error);
+                }
+            } else {
+                console.warn('⚠️ Pixel não carregado');
+            }
+            
+            // 2. ENVIA GOOGLE ANALYTICS (se disponível)
+            if (typeof gtag !== 'undefined') {
+                try {
+                    gtag('event', 'begin_checkout', {
+                        currency: 'BRL',
+                        value: 29.90,
+                        items: [{
+                            item_id: 'liberte-se-panico',
+                            item_name: 'Liberte-se do Pânico',
+                            price: 29.90,
+                            quantity: 1
+                        }]
+                    });
+                    console.log('✅ Google Analytics enviado');
+                } catch (error) {
+                    console.error('❌ Erro no GA:', error);
+                }
+            }
+            
+            // 3. REDIRECIONA IMEDIATAMENTE
+            console.log('🚀 Redirecionando para:', checkoutUrl);
+            window.location.href = checkoutUrl;
+            
+        }, { once: false }); // Permite múltiplos cliques (caso necessário)
+    });
+});
+
+// ========== RASTREAMENTO DE PAGEVIEW ==========
+if (typeof fbq !== 'undefined') {
+    console.log('✅ PageView rastreado pelo Pixel');
+}
+
+// ========== RASTREAMENTO DE SCROLL ==========
+let scrollTracked = false;
+window.addEventListener('scroll', function() {
+    if (scrollTracked) return;
+    
+    const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+    
+    if (scrollPercent > 50) {
+        scrollTracked = true;
+        
+        if (typeof fbq !== 'undefined') {
+            fbq('trackCustom', 'ScrollDepth', { depth: '50%' });
+            console.log('✅ Scroll 50% rastreado');
+        }
+    }
+});
+
+// ========== RASTREAMENTO DE TEMPO ==========
+setTimeout(function() {
+    if (typeof fbq !== 'undefined') {
+        fbq('trackCustom', 'TimeOnPage30s', { seconds: 30 });
+        console.log('✅ 30 segundos rastreado');
+    }
+}, 30000);
+
+// ========== STATUS INICIAL ==========
+console.log('═══════════════════════════════════════');
+console.log('🚀 SISTEMA DE RASTREAMENTO ATIVO');
+console.log('═══════════════════════════════════════');
+console.log('📊 Pixel ID: 1717272712242350');
+console.log('✅ Pixel carregado:', typeof fbq !== 'undefined');
+console.log('✅ Google Analytics:', typeof gtag !== 'undefined');
+console.log('═══════════════════════════════════════');
+</script>
 
 </body>
 </html>
+
 
