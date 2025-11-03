@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liberte-se do pânico e ansiedade com método comprovado. Receba GRÁTIS: 10 Técnicas de Respiração + Guia de 7 Dias. Tudo por apenas R$ 29,90 com garantia de 7 dias.">
+    <meta name="keywords" content="ansiedade, pânico, síndrome do pânico, técnicas de respiração, mindfulness, saúde mental">
+    <meta name="author" content="Liberte-se do Pânico">
+    <meta property="og:title" content="Liberte-se do Pânico e Ansiedade - Método Completo">
+    <meta property="og:description" content="Método comprovado + BÔNUS GRÁTIS: 10 Técnicas de Respiração e Guia de 7 Dias">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://zoratta.github.io/ansiedade-panico/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Preconnect para performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <title>Liberte-se do Pânico e Ansiedade | Método Completo + Bônus Grátis</title>
+    
+    <style>
+        /* ========== RESET E VARIÁVEIS ========== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1e40af;
+            --secondary: #10b981;
+            --accent: #f59e0b;
+            --danger: #ef4444;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f9fafb;
+            --white: #ffffff;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        /* ========== HERO SECTION ========== */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: var(--white);
+            padding: 80px 20px 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>');
+            animation: float 20s linear infinite;
+        }
+
+        @keyframes float {
+            from { transform: translateY(0); }
+            to { transform: translateY(-100px); }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(32px, 5vw, 56px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-highlight {
+            color: #fbbf24;
+            text-decoration: underline;
+            text-decoration-color: #fbbf24;
+            text-decoration-thickness: 3px;
+        }
+
+        .hero p {
+            font-size: clamp(18px, 2.5vw, 22px);
+            margin-bottom: 30px;
+            opacity: 0.95;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-primary {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--white);
+            padding: 18px 50px;
+            font-size: 20px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .cta-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(245, 158, 11, 0.5);
+            background: #d97706;
+        }
+
+        .guarantee {
+            margin-top: 20px;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .guarantee-icon {
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        /* ========== SOCIAL PROOF ========== */
+        .social-proof {
+            background: var(--white);
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--primary);
+            display: block;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: var(--text-light);
+            margin-top: 5px;
+        }
+
+        /* ========== PROBLEMA (AGITAÇÃO) ========== */
+        .problem {
+            padding: 80px 20px;
+            background: var(--bg-light);
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(32px, 4vw, 42px);
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto 50px;
+        }
+
+        .problem-list {
+            max-width: 800px;
+            margin: 0 auto;
+            list-style: none;
+        }
+
+        .problem-item {
+            background: var(--white);
+            padding: 25px 30px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .problem-item:hover {
+            transform: translateX(10px);
+        }
+
+        .problem-icon {
+            font-size: 32px;
+            flex-shrink: 0;
+        }
+
+        .problem-text {
+            font-size: 18px;
+            color: var(--text-dark);
+        }
+
+        /* ========== SOLUÇÃO ========== */
+        .solution {
+            padding: 80px 20px;
+            background: var(--white);
+        }
+
+        .solution-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .solution-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: var(--white);
+            padding: 40px 30px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: var(--shadow-lg);
+            transition: transform 0.3s ease;
+        }
+
+        .solution-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .solution-day {
+            font-size: 16px;
+            font-weight: 600;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        .solution-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .solution-desc {
+            font-size: 16px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        /* ========== BENEFÍCIOS ========== */
+        .benefits {
+            padding: 80px 20px;
+            background: var(--bg-light);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: 50px auto 0;
+        }
+
+        .benefit-card {
+            background: var(--white);
+            padding: 35px 25px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-5px);
+        }
+
+        .benefit-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .benefit-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        .benefit-desc {
+            font-size: 15px;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* ========== DEPOIMENTOS ========== */
+        .testimonials {
+    padding: 80px 20px;
+    background: var(--white);
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background: var(--bg-light);
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+.testimonial-stars {
+    color: #fbbf24;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial-footer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.testimonial-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary);
+    flex-shrink: 0;
+}
+
+.testimonial-info {
+    flex: 1;
+}
+
+.testimonial-author {
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.testimonial-role {
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+        /* ========== OFERTA ========== */
+        .offer {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 100%);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .offer-box {
+            max-width: 700px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 50px 40px;
+            border-radius: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .offer-badge {
+            background: var(--danger);
+            color: var(--white);
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 20px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .price-old {
+            font-size: 24px;
+            text-decoration: line-through;
+            opacity: 0.7;
+            margin-bottom: 10px;
+        }
+
+        .price-new {
+            font-size: 64px;
+            font-weight: 800;
+            color: #fbbf24;
+            margin-bottom: 10px;
+            line-height: 1;
+        }
+
+        .price-installment {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .bonus-list {
+            text-align: left;
+            max-width: 500px;
+            margin: 30px auto;
+            list-style: none;
+        }
+
+        .bonus-item {
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .bonus-item:last-child {
+            border-bottom: none;
+        }
+
+        .bonus-icon {
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .bonus-highlight {
+            background: rgba(251, 191, 36, 0.2);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 30px 0;
+            border: 2px solid #fbbf24;
+        }
+
+        .bonus-highlight-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #fbbf24;
+            margin-bottom: 15px;
+        }
+
+        /* ========== FAQ ========== */
+        .faq {
+            padding: 80px 20px;
+            background: var(--bg-light);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 15px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .faq-question {
+            padding: 25px 30px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: var(--bg-light);
+        }
+
+        .faq-icon {
+            font-size: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 30px;
+        }
+
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 0 30px 25px;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* ========== GARANTIA ========== */
+        .guarantee-section {
+            padding: 80px 20px;
+            background: var(--white);
+            text-align: center;
+        }
+
+        .guarantee-box {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 50px 40px;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: var(--white);
+            border-radius: 20px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .guarantee-badge {
+            width: 120px;
+            height: 120px;
+            background: var(--white);
+            color: var(--secondary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            margin: 0 auto 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .guarantee-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .guarantee-text {
+            font-size: 18px;
+            line-height: 1.7;
+            opacity: 0.95;
+        }
+
+        /* ========== CTA FINAL ========== */
+        .final-cta {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .urgency-text {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .timer {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .timer-box {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 20px 30px;
+            border-radius: 12px;
+            min-width: 100px;
+        }
+
+        .timer-number {
+            font-size: 48px;
+            font-weight: 800;
+            display: block;
+            line-height: 1;
+        }
+
+        .timer-label {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+
+        /* ========== FOOTER ========== */
+        footer {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            opacity: 0.8;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: var(--white);
+            text-decoration: underline;
+        }
+
+        /* ========== RESPONSIVIDADE ========== */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 20px 80px;
+            }
+
+            .stats {
+                gap: 40px;
+            }
+
+            .stat-number {
+                font-size: 36px;
+            }
+
+            .solution-grid,
+            .benefits-grid,
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .offer-box {
+                padding: 40px 25px;
+            }
+
+            .price-new {
+                font-size: 48px;
+            }
+
+            .timer {
+                gap: 15px;
+            }
+
+            .timer-box {
+                padding: 15px 20px;
+                min-width: 80px;
+            }
+
+            .timer-number {
+                font-size: 36px;
+            }
+        }
+
+        /* ========== ANIMAÇÕES DE SCROLL ========== */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ========== ACESSIBILIDADE ========== */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        /* ========== LOADING SPINNER ========== */
+        .spinner {
+            display: none;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-top-color: var(--white);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin-left: 10px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .cta-primary.loading .spinner {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-badge">✨ Método Cientificamente Comprovado</div>
+            <h1>
+                <span class="hero-highlight">Liberte-se do Pânico</span><br>
+                e da Ansiedade Para Sempre
+            </h1>
+            <p>
+                Descubra o método completo que já ajudou milhares de pessoas a vencerem crises de pânico, recuperarem o controle emocional e voltarem a viver com paz e liberdade.
+            </p>
+            <a href="https://pay.kiwify.com.br/kLii57C" class="cta-primary" id="cta-hero">
+                Quero Me Libertar Agora
+                <span class="spinner"></span>
+            </a>
+            <p class="guarantee">
+                <span class="guarantee-icon">🔒</span>
+                Compra 100% Segura | Garantia Incondicional de 7 Dias
+            </p>
+        </div>
+    </section>
+
+    <!-- ========== SOCIAL PROOF ========== -->
+    <section class="social-proof">
+        <div class="container">
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">12.847+</span>
+                    <span class="stat-label">Pessoas Transformadas</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4.9★</span>
+                    <span class="stat-label">Avaliação Média</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">89%</span>
+                    <span class="stat-label">Redução de Crises</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROBLEMA ========== -->
+    <section class="problem">
+        <div class="container">
+            <h2 class="section-title">Você Está Cansado de Viver Assim?</h2>
+            <p class="section-subtitle">
+                O pânico e a ansiedade roubam sua paz, seu sono e sua qualidade de vida. Reconhece algum desses sintomas?
+            </p>
+            <ul class="problem-list">
+                <li class="problem-item fade-in">
+                    <span class="problem-icon">😰</span>
+                    <span class="problem-text">Crises de pânico repentinas com coração acelerado e falta de ar</span>
+                </li>
+                <li class="problem-item fade-in">
+                    <span class="problem-icon">😴</span>
+                    <span class="problem-text">Noites em claro, mente acelerada e cansaço constante</span>
+                </li>
+                <li class="problem-item fade-in">
+                    <span class="problem-icon">😨</span>
+                    <span class="problem-text">Medo paralisante de ter crises em público ou lugares fechados</span>
+                </li>
+                <li class="problem-item fade-in">
+                    <span class="problem-icon">🤯</span>
+                    <span class="problem-text">Pensamentos catastróficos que você não consegue controlar</span>
+                </li>
+                <li class="problem-item fade-in">
+                    <span class="problem-icon">💔</span>
+                    <span class="problem-text">Sensação de estar preso, evitando situações e perdendo oportunidades</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ========== SOLUÇÃO ========== -->
+    <section class="solution">
+        <div class="container">
+            <h2 class="section-title">O Método Completo Para Vencer o Pânico</h2>
+            <p class="section-subtitle">
+                Um programa estruturado, prático e baseado em ciência para você recuperar o controle total da sua vida
+            </p>
+            <div class="solution-grid">
+                <div class="solution-card fade-in">
+                    <div class="solution-day">MÓDULO 1</div>
+                    <h3 class="solution-title">Entenda o Pânico</h3>
+                    <p class="solution-desc">Descubra como funciona a síndrome do pânico e por que seu corpo reage assim</p>
+                </div>
+                <div class="solution-card fade-in">
+                    <div class="solution-day">MÓDULO 2</div>
+                    <h3 class="solution-title">Técnicas de Controle</h3>
+                    <p class="solution-desc">10 técnicas de respiração para interromper crises instantaneamente</p>
+                </div>
+                <div class="solution-card fade-in">
+                    <div class="solution-day">MÓDULO 3</div>
+                    <h3 class="solution-title">Reestruturação Mental</h3>
+                    <p class="solution-desc">Elimine pensamentos catastróficos e crenças limitantes</p>
+                </div>
+                <div class="solution-card fade-in">
+                    <div class="solution-day">MÓDULO 4</div>
+                    <h3 class="solution-title">Exposição Gradual</h3>
+                    <p class="solution-desc">Enfrente seus medos de forma segura e progressiva</p>
+                </div>
+                <div class="solution-card fade-in">
+                    <div class="solution-day">MÓDULO 5</div>
+                    <h3 class="solution-title">Estilo de Vida</h3>
+                    <p class="solution-desc">Hábitos diários que previnem crises e fortalecem sua mente</p>
+                </div>
+                <div class="solution-card fade-in">
+                    <div class="solution-day">MÓDULO 6</div>
+                    <h3 class="solution-title">Manutenção</h3>
+                    <p class="solution-desc">Plano anti-recaída para manter resultados para sempre</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BENEFÍCIOS ========== -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">O Que Você Vai Conquistar</h2>
+            <p class="section-subtitle">
+                Resultados reais e duradouros que vão transformar sua qualidade de vida
+            </p>
+            <div class="benefits-grid">
+                <div class="benefit-card fade-in">
+                    <span class="benefit-icon">😌</span>
+                    <h3 class="benefit-title">Liberdade Total</h3>
+                    <p class="benefit-desc">Viva sem medo de crises, vá onde quiser com confiança</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <span class="benefit-icon">💤</span>
+                    <h3 class="benefit-title">Sono Profundo</h3>
+                    <p class="benefit-desc">Durma tranquilamente e acorde revigorado</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <span class="benefit-icon">🧠</span>
+                    <h3 class="benefit-title">Clareza Mental</h3>
+                    <p class="benefit-desc">Tome decisões com confiança e foco total</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <span class="benefit-icon">❤️</span>
+                    <h3 class="benefit-title">Relacionamentos Saudáveis</h3>
+                    <p class="benefit-desc">Conecte-se genuinamente sem irritabilidade</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <span class="benefit-icon">🚀</span>
+                    <h3 class="benefit-title">Produtividade Elevada</h3>
+                    <p class="benefit-desc">Realize mais sem procrastinação ou sobrecarga</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <span class="benefit-icon">🎯</span>
+                    <h3 class="benefit-title">Autoconfiança</h3>
+                    <p class="benefit-desc">Enfrente desafios com coragem renovada</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== DEPOIMENTOS ========== -->
+    <section class="testimonials">
+    <div class="container">
+        <h2 class="section-title">Histórias de Transformação Real</h2>
+        <p class="section-subtitle">
+            Veja o que pessoas como você conquistaram com este método
+        </p>
+        <div class="testimonial-grid">
+            <!-- DEPOIMENTO 1 - MARIANA -->
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">
+                    "Depois de 3 anos sofrendo com síndrome do pânico, finalmente encontrei algo que funciona. Hoje vivo sem medo e voltei a fazer tudo que evitava!"
+                </p>
+                <div class="testimonial-footer">
+                    <img src="https://i.pravatar.cc/150?img=5" alt="Mariana S." class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-author">Mariana S.</div>
+                        <div class="testimonial-role">Professora, 34 anos</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DEPOIMENTO 2 - CARLOS -->
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">
+                    "As técnicas de respiração são incríveis! Consigo controlar as crises antes que elas tomem conta. Minha vida mudou completamente."
+                </p>
+                <div class="testimonial-footer">
+                    <img src="https://i.pravatar.cc/150?img=12" alt="Carlos R." class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-author">Carlos R.</div>
+                        <div class="testimonial-role">Empresário, 42 anos</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DEPOIMENTO 3 - JULIANA -->
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">
+                    "Estava cética, mas os resultados me surpreenderam. Minha ansiedade diminuiu 80% e voltei a viajar, algo que tinha pavor. Gratidão!"
+                </p>
+                <div class="testimonial-footer">
+                    <img src="https://i.pravatar.cc/150?img=9" alt="Juliana M." class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-author">Juliana M.</div>
+                        <div class="testimonial-role">Designer, 28 anos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- ========== OFERTA ========== -->
+    <section class="offer" id="oferta">
+        <div class="container">
+            <div class="offer-box">
+                <div class="offer-badge">🔥 OFERTA ESPECIAL</div>
+                <h2 class="section-title" style="color: white; margin-bottom: 30px;">
+                    Liberte-se do Pânico e Ansiedade Hoje
+                </h2>
+                
+                <div class="bonus-highlight">
+                    <div class="bonus-highlight-title">🎁 BÔNUS GRÁTIS INCLUSOS:</div>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 8px 0; font-size: 16px;">✅ 10 Técnicas de Respiração (Valor: R$ 47)</li>
+                        <li style="padding: 8px 0; font-size: 16px;">✅ Guia de 7 Dias para Ansiedade (Valor: R$ 37)</li>
+                    </ul>
+                </div>
+
+                <div class="price-old">De R$ 147,00</div>
+                <div class="price-new">R$ 29,90</div>
+                <div class="price-installment">Pagamento único | Acesso imediato e vitalício</div>
+                
+                <a href="https://pay.kiwify.com.br/kLii57C" class="cta-primary" id="cta-offer">
+                    Garantir Minha Transformação Agora
+                </a>
+
+                <ul class="bonus-list">
+                    <li class="bonus-item">
+                        <span class="bonus-icon">📚</span>
+                        <span><strong>Método Completo:</strong> Liberte-se do Pânico (PDF)</span>
+                    </li>
+                    <li class="bonus-item">
+                        <span class="bonus-icon">🎁</span>
+                        <span><strong>BÔNUS 1:</strong> 10 Técnicas de Respiração (GRÁTIS)</span>
+                    </li>
+                    <li class="bonus-item">
+                        <span class="bonus-icon">🎁</span>
+                        <span><strong>BÔNUS 2:</strong> Guia de 7 Dias para Ansiedade (GRÁTIS)</span>
+                    </li>
+                    <li class="bonus-item">
+                        <span class="bonus-icon">📊</span>
+                        <span>Planilhas de Acompanhamento e Exercícios</span>
+                    </li>
+                    <li class="bonus-item">
+                        <span class="bonus-icon">💬</span>
+                        <span>Suporte por E-mail</span>
+                    </li>
+                    <li class="bonus-item">
+                        <span class="bonus-icon">♾️</span>
+                        <span>Acesso Imediato e Vitalício</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Este método funciona para síndrome do pânico severa?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sim! O método é baseado em Terapia Cognitivo-Comportamental (TCC) e técnicas de respiração cientificamente comprovadas. Mais de 12 mil pessoas já reduziram significativamente suas crises de pânico e ansiedade.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Quanto tempo leva para ver resultados?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Muitas pessoas relatam melhora já nos primeiros dias. O programa de 7 dias oferece resultados rápidos, e o método completo garante transformação duradoura em semanas.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Preciso de experiência prévia?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Não! O material é para iniciantes. Todas as técnicas são explicadas passo a passo, com linguagem simples e exemplos práticos.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>E se não funcionar para mim?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Você tem 7 dias de garantia incondicional. Se não sentir melhora, devolvemos 100% do seu investimento, sem perguntas.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Posso usar junto com terapia ou medicação?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sim! O método é um complemento excelente para tratamentos profissionais. Sempre consulte seu médico ou terapeuta antes de fazer mudanças.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Como recebo o material?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Imediatamente após a compra, você recebe um e-mail com acesso a todos os materiais em PDF. Pode baixar e começar na hora!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GARANTIA ========== -->
+    <section class="guarantee-section">
+        <div class="container">
+            <div class="guarantee-box">
+                <div class="guarantee-badge">🛡️</div>
+                <h2 class="guarantee-title">Garantia Incondicional de 7 Dias</h2>
+                <p class="guarantee-text">
+                    Experimente o método completo por 7 dias. Se você não sentir uma melhora significativa no seu pânico e ansiedade, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia. Você não tem nada a perder, apenas liberdade a ganhar.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA FINAL ========== -->
+    <section class="final-cta">
+        <div class="container">
+            <p class="urgency-text">⚠️ ATENÇÃO: Esta oferta expira em:</p>
+            <div class="timer">
+                <div class="timer-box">
+                    <span class="timer-number" id="hours">00</span>
+                    <span class="timer-label">Horas</span>
+                </div>
+                <div class="timer-box">
+                    <span class="timer-number" id="minutes">00</span>
+                    <span class="timer-label">Minutos</span>
+                </div>
+                <div class="timer-box">
+                    <span class="timer-number" id="seconds">00</span>
+                    <span class="timer-label">Segundos</span>
+                </div>
+            </div>
+            <h2 class="section-title" style="color: white; margin: 30px 0 20px;">
+                Não Deixe o Pânico Roubar Mais Um Dia da Sua Vida
+            </h2>
+            <p style="font-size: 20px; margin-bottom: 30px; opacity: 0.95;">
+                Milhares de pessoas já se libertaram. Agora é a sua vez.
+            </p>
+            <a href="https://pay.kiwify.com.br/kLii57C" class="cta-primary" id="cta-final">
+                Sim, Quero Me Libertar do Pânico
+            </a>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Guia anti-Pânico. Todos os direitos reservados.</p>
+            <p>
+                <a href="#privacidade">Política de Privacidade</a> | 
+                <a href="#termos">Termos de Uso</a> | 
+                <a href="mailto:ansiedade.panico.kit@gmail.com">Contato</a>
+            </p>
+            <p style="margin-top: 20px; font-size: 12px;">
+                Este produto não substitui orientação médica ou psicológica profissional. 
+                Consulte sempre um especialista para diagnóstico e tratamento adequado.
+            </p>
+        </div>
+    </footer>
+
+    <!-- ========== JAVASCRIPT ========== -->
+    <script>
+        // ========== SCROLL ANIMATIONS ==========
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // ========== FAQ ACCORDION ==========
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const answer = item.querySelector('.faq-answer');
+                const isActive = item.classList.contains('active');
+
+                // Fecha todos os outros
+                document.querySelectorAll('.faq-item').forEach(faq => {
+                    faq.classList.remove('active');
+                    faq.querySelector('.faq-answer').classList.remove('active');
+                });
+
+                // Abre o clicado se não estava ativo
+                if (!isActive) {
+                    item.classList.add('active');
+                    answer.classList.add('active');
+                }
+            });
+        });
+
+        // ========== COUNTDOWN TIMER ==========
+        function startCountdown(duration) {
+            const endTime = Date.now() + duration;
+            
+            function updateTimer() {
+                const now = Date.now();
+                const remaining = Math.max(0, endTime - now);
+                
+                const hours = Math.floor(remaining / (1000 * 60 * 60));
+                const minutes = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((remaining % (1000 * 60)) / 1000);
+                
+                document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+                document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+                document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+                
+                if (remaining > 0) {
+                    requestAnimationFrame(updateTimer);
+                }
+            }
+            
+            updateTimer();
+        }
+
+        // Inicia contador de 2 horas
+        startCountdown(2 * 60 * 60 * 1000);
+
+        // ========== SMOOTH SCROLL ==========
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // ========== CTA TRACKING ==========
+        document.querySelectorAll('.cta-primary').forEach(button => {
+            button.addEventListener('click', function(e) {
+                // Analytics tracking (Google Analytics, Facebook Pixel, etc.)
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'click', {
+                        'event_category': 'CTA',
+                        'event_label': this.id,
+                        'value': 29.90
+                    });
+                }
+                
+                // Facebook Pixel
+                if (typeof fbq !== 'undefined') {
+                    fbq('track', 'InitiateCheckout', {
+                        value: 29.90,
+                        currency: 'BRL'
+                    });
+                }
+
+                // Adiciona loading state
+                this.classList.add('loading');
+                
+                // Redireciona para checkout (substitua pela sua URL)
+                setTimeout(() => {
+                    window.location.href = 'https://pay.hotmart.com/SEU-LINK-AQUI';
+                }, 500);
+            });
+        });
+
+        // ========== PERFORMANCE OPTIMIZATION ==========
+        // Lazy loading de imagens (se adicionar imagens)
+        if ('loading' in HTMLImageElement.prototype) {
+            const images = document.querySelectorAll('img[loading="lazy"]');
+            images.forEach(img => {
+                img.src = img.dataset.src;
+            });
+        }
+
+        // ========== ACCESSIBILITY ==========
+        // Adiciona navegação por teclado
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.faq-item.active').forEach(item => {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-answer').classList.remove('active');
+                });
+            }
+        });
+    </script>
+
+    <!-- ========== ANALYTICS (ADICIONE SEUS CÓDIGOS) ========== -->
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+
+    <!-- Facebook Pixel -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
+    </noscript>
+
+</body>
+</html>
